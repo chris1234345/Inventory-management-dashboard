@@ -18,3 +18,9 @@ body,
   @apply bg-gray-500;
   @apply text-gray-900;
 }
+
+.flex.gap-3.justify-between.md\:justify-normal.items-center.pt-8.\$\{isSidebarCollapsed\}.\?.\"px-5\".\:.\"px-8\" {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

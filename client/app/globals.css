@@ -36,3 +36,10 @@ body,
     grid-template-rows: repeat(8, 7.5vh);
   }
 }
+
+
+ul.flex.flex-col.justify-around.items-center.xl\:items-start.py-5.gap-3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}

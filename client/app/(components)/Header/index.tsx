@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Header = () => {
+type HeaderProps = {
+  name: string;
+
+}
+
+const Header = ({name}: HeaderProps) => {
   return (
-    <div>
-      
-    </div>
+    <h1 className='text-2xl font-semibold text-gray-700'>{name}</h1>
   )
 }
 

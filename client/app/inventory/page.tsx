@@ -2,6 +2,12 @@
 
 import { useGetProductsQuery } from "@/state/api"
 import Header from "../(components)/Header";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
+
+const columns: GridColDef[] = [
+  {field: "productId", headerName: "ID", width: 90},
+  {field: "name", headerName: "Product Name", width: 200},
+]
 
 const Inventory = () => {
     const {data: products, isError, isLoading} = useGetProductsQuery();
@@ -21,6 +27,10 @@ const Inventory = () => {
   return (
     <div className="flex flex-col">
       <Header  name="Investory"/>
+      <DataGrid 
+      rows={products}
+      columns={columns}
+      />
     </div>
   )
 }

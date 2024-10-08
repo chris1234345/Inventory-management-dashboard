@@ -43,3 +43,9 @@ ul.flex.flex-col.justify-around.items-center.xl\:items-start.py-5.gap-3 {
   display: flex;
   align-items: center;
 }
+
+.MuiDataGrid-virtualScrollerRenderZone.css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone,
+.MuiDataGrid-footerContainer.MuiDataGrid-withBorderColor.css-wop1k0-MuiDataGrid-footerContainer
+{
+  background:white;
+}
